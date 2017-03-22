@@ -4,18 +4,24 @@
  * Letters should be broken up with a space.
  * Feel free to use any process for differentiating the space between letters and words
  *     I recommend something like a / or | between words; ie 'DOG CAT' => '-.. --- --. / -.- .- -'
+ *
+ * Also feel free to modify this code or the HTML as much as needed.  You do not need to use this structure.
  */
 
-function translate(text) {
-    return text;
+function setOutput(input) {
+    var output = document.getElementById('result-content');
+
+    // do translating here
+
+    output.innerHTML = input;
 }
 
-function setOutput() {
-    var input = document.getElementById("text-to-convert");
-    var output = document.getElementById("result-content");
-
-    output.innerHTML = translate(input.value);
+function getInput() {
+    var input = document.getElementById('text-to-convert');
+    setOutput(input.value);
 }
 
-var el = document.getElementById("submit-button");
-el.addEventListener("click", setOutput);
+document.getElementById('text-input').addEventListener('submit', function(e) {
+    e.preventDefault();
+    getInput();
+});
