@@ -29,5 +29,5 @@ function generateOutput(input) {
 document.getElementById('text-input').addEventListener('submit', function(e) {
     e.preventDefault();
     const input = document.getElementById('text-to-convert');
-    generateOutput(input);
+    generateOutput(input.value);
 });
