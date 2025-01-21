@@ -2,9 +2,9 @@
  * Morse Code Translator
  * 
  * Use the Letters API built for this interview:
- * https://safetybelt.pythonanywhere.com/letters/<LETTER>
+ * https://morse.safetybelt.dev/letter/<LETTER>
  * 
- *  For example, a GET call to https://safetybelt.pythonanywhere.com/letters/s will return:
+ *  For example, a GET call to https://morse.safetybelt.dev/letter/s will return:
  *      {
  *          "code": "..."
  *      }
